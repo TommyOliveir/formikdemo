@@ -21,9 +21,9 @@ function FormikContainer() {
     { key: 'Pineapple', value: 'Pineapple'}
   ]
   const radioOptions = [
-    { key: 'option 1', value: 'radioValue 1'},
-    { key: 'option 2', value: 'radioValue 2'},
-    { key: 'option 3', value: 'radioValue 3'}
+    { key: 'radioOption 1', value: 'radioValue 1'},
+    { key: 'radioOption 2', value: 'radioValue 2'},
+    { key: 'radioOption 3', value: 'radioValue 3'}
   ]
   const initialValues = {
     email: "",
