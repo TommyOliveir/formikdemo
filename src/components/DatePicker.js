@@ -20,6 +20,8 @@ function DatePicker(props) {
               {...rest}
               selected={value}
               onChange={(val) => setFieldValue(name, val)}
+              showYearDropdown
+              scrollableMonthYearDropdown
             />
           );
         }}
