@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControl from "./FormikControl";
+import { Button, ButtonGroup, Stack } from '@chakra-ui/react'
 
 function EnrollmentForm() {
   const dropdownOptions = [
@@ -46,20 +47,20 @@ function EnrollmentForm() {
         return (
           <Form>
             <FormikControl
-              control="input"
+              control="chackrainput"
               type="email"
               label="Email"
               name="email"
             />
-            <FormikControl control="textarea" label="Bio" name="bio" />
+            <FormikControl control="chackratextarea" label="Bio" name="bio" />
             <FormikControl
-              control="select"
+              control="chackraselect"
               label="Course"
               name="course"
               options={dropdownOptions}
             />
             <FormikControl
-              control="checkbox"
+              control="chackracheckbox"
               label="Your Skillset"
               name="skills"
               options={checkboxOptions}
@@ -69,9 +70,10 @@ function EnrollmentForm() {
               label="Course Date"
               name="courseDate"
             />
-            <button type="submit" disabled={!formik.isValid}>
+            {/* <button type="submit" disabled={!formik.isValid}>
               Submit
-            </button>
+            </button> */}
+            <Button  mt={3}  type="submit" disabled={!formik.isValid} colorScheme='blue'>Submit</Button>
           </Form>
         );
       }}

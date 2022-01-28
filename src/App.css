@@ -9,7 +9,7 @@ label {
   margin-bottom: 5px;
 }
 
-input + label {
+/* input + label {
   font-weight: bold;
   display: inline-flex;
   margin-right: 20px;
@@ -18,7 +18,7 @@ input + label {
 input[type='text'],
 input[type='email'],
 input[type='password'],
-textarea,
+textarea, */
 select {
   display: block;
   width: 400px;

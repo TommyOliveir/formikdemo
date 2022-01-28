@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControl from "./FormikControl";
+import { Button, ButtonGroup, Stack } from '@chakra-ui/react'
 
 function LoginForm() {
   const initialValues = {
@@ -27,9 +28,13 @@ function LoginForm() {
       >
         {(formik) => {
           return <Form>
-              <FormikControl control='input' type='email' label='Email' name='email' />
-              <FormikControl control='input' type='password' label='Password' name='password' />
-              <button type="submit" disabled={!formik.isValid}>Submit</button>
+              <FormikControl control='chackrainput' type='email' label='Email' name='email' />
+              <FormikControl control='chackrainput' type='password' label='Password' name='password' />
+              {/* <button type="submit" disabled={!formik.isValid}>Submit</button> */}
+           
+   
+              <Button  mt={3}  type="submit" disabled={!formik.isValid} colorScheme='blue'>Submit</Button>
+             
           </Form>;
         }}
       </Formik>
