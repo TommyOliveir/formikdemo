@@ -60,7 +60,7 @@ function EnrollmentForm() {
               options={dropdownOptions}
             />
             <FormikControl
-              control="chackracheckbox"
+              control="checkbox"
               label="Your Skillset"
               name="skills"
               options={checkboxOptions}

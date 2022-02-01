@@ -9,7 +9,7 @@ label {
   margin-bottom: 5px;
 }
 
-/* input + label {
+input + label {
   font-weight: bold;
   display: inline-flex;
   margin-right: 20px;
@@ -18,7 +18,7 @@ label {
 input[type='text'],
 input[type='email'],
 input[type='password'],
-textarea, */
+textarea, 
 select {
   display: block;
   width: 400px;
@@ -32,6 +32,17 @@ select {
   border-radius: 4px;
   /* margin-bottom: 20px; */
 }
+
+/* .custom-field input {
+  border-color: 
+  #cccccc;
+}
+
+.custom-field input:focus { 
+  outline: none !important;
+
+  border: 2px solid #3182ce;
+} */
 
 .form-control {
   margin-bottom: 20px;

@@ -8,7 +8,9 @@ import DatePicker from "./DatePicker";
 import ChackraInput from "./ChackraInput";
 import ChackraTextarea from "./ChackraTextarea";
 import ChackraSelect from "./ChackraSelect";
-import ChackraCheckbox from "./ChackraCheckbox";
+import ChackraDate from "./ChackraDate";
+
+
 
 function FormikControl(props) {
   const { control, ...rest } = props;
@@ -31,8 +33,8 @@ function FormikControl(props) {
       return <ChackraTextarea {...rest}/>
     case "chackraselect":
       return <ChackraSelect {...rest}/>
-    case "chackracheckbox":
-      return <ChackraCheckbox {...rest}/>
+    case "chackradate":
+      return <ChackraDate {...rest}/>
     default:
       return null;
   }
